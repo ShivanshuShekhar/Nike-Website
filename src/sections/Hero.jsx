@@ -36,9 +36,13 @@ const Hero = () => {
         <img src={bigShoe1} alt="Shoe Collection" width={610} height={500} className="object-contain relative z-10" />
 
         <div>
-          {shoes.map((shoe, index) => (
+          {shoes.map((shoe) => (
             <div key={shoe}>
-              <ShoeCard />
+              <ShoeCard 
+              imgURL={shoes}
+              changeBigShoeImage={() => {}}
+              bigShoeImg="" 
+              />
             </div>
           ))}
       </div>
